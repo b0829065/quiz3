@@ -5,10 +5,10 @@ data.done( function( msg ) {
     $.each(msg.result.results, function(i,item) {   
         console.log(msg);  
         $("#contain").html();
-        $("#contain").append($("<h2/>").text(item.A_Name_Ch));            
+        $("#contain").append($("<h2/>").text(item.A_Family));            
         $("#contain").append($("<h3/>").text(item.A_Behavior));  
         $("#contain").append($("<img/>").attr("src", item.A_Pic01_URL)); 
-               
+        $("#contain").append($("<img/>").attr("src", item.A_Vedio_URL)); 
     }); 
 }); 
 data.fail( function( msg ) { 
